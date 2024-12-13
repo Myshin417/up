@@ -1,0 +1,76 @@
+
+nav a, footer a, span{
+    font-size:20px;
+    color: greenyellow;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 2px;
+    
+}
+
+footer p{
+    color: aliceblue;
+    font-style: italic;
+    background-color: black;
+}
+footer a{
+    color: aliceblue;
+   background-color: black;
+}
+body {
+    background-color: rgb(131, 82, 47) ;
+    text-align: center;
+}
+h1 {
+    color: aliceblue;
+    font-size:40px;
+    font-style: italic;
+}
+h2{ color: aliceblue;
+    font-size:30px;
+    font-style: italic;
+}
+.about{
+    font-family:woodblock ;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    font-size: 150;
+    color: aliceblue;
+}
+.employee{
+    color: aliceblue;
+    font-weight: bold;
+    font-style: italic;
+   
+}
+.t{
+    color: black;
+    background-color: #fff;
+}
+.rog{
+    color: darkturquoise;
+}
+a:hover{
+    color: aqua;
+    transition-duration: 1s;
+}
+img {
+    border: 3px, blue, dotted;
+}
+.l{
+    border: 2px, white, solid;
+    background-color: cadetblue;
+}
+table img{
+    width: 100px;
+}
+nav{
+    border: 3px lightgreen solid; 
+    background-color: violet;
+    padding: 10px;
+}
+/*Ссылка на МВД РФ*/
+a[href^="https://"]{
+    color: darkblue;
+}

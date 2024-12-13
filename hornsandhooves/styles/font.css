@@ -1,0 +1,59 @@
+
+
+nav a {
+font-size:20px;
+color: lightblue;
+text-decoration: none;
+font-weight: bold;
+} 
+footer p{
+    color: black;
+    font-style: italic;
+}
+footer a{
+    color: black;
+   
+}
+#par1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: normal;
+    font-size: x-small;
+    color: #ff0000;
+
+}
+#par2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: medium;
+    color: rgb(00, 255, 00);
+
+}
+#par3 {
+    font-family:'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-variant: normal;
+    font-weight: lighter;
+    font-size: xx-large;
+    color: blue;
+
+}
+#par4 {
+    font-family:cursive ;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    font-size: 12px;
+    color: hsl(60, 100%, 50%);
+}
+#par5 {
+    font-family:woodblock ;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    font-size: 150;
+    color: initial;
+}
