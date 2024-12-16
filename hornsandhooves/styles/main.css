@@ -16,6 +16,7 @@ footer p {
 footer a {
     color: aliceblue;
     margin-left: 20px;
+    border: 2px white solid;
 
 }
 
@@ -67,13 +68,14 @@ a:hover {
     transition-duration: 1s;
 }
 
-img {
-    border: 3px, blue, dotted;
-}
 
-.l {
+
+.tableem {
     border: 2px, white, solid;
     background-color: cadetblue;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 table img {
@@ -90,7 +92,12 @@ table img {
 a[href^="https://"] {
     color: darkblue;
 }
-
+a[href^="#top"]
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
 #container {
     width: 1000px;
     margin: 0 auto;
@@ -179,14 +186,11 @@ nav ul li:hover {
 }
 
 /*Сокрытие ячейки*/
-.t tr td:hover {
-    color: white;
-    transition-duration: 1s;
-}
-
+.t tr td:hover,
 .t tr th:hover {
-    color: red;
-    transition-duration: 1s;
+    visibility: hidden;
+   
+    
 }
 
 #flexnav {
@@ -207,3 +211,69 @@ nav ul li:hover {
 
 
 }
+/*Флекс с таблицей*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    border: 2px white solid;
+  }
+ .block1, .block2, .block3, .block4{
+    align-items: center;
+    display: flex;
+    border: 2px white solid;
+    width: 170px;
+ }
+ .imgs{
+    border-radius: 15%;
+    box-shadow: 5px 3px 4px 2px black;
+    width: 100px;
+   
+ }
+ .photo{
+    box-shadow: 5px 3px 4px 2px gray;
+    border-radius: 10%;
+    border: 2px orange solid;
+ }
+ #previewFrame{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+        
+ }
+ .preview{
+   margin: 0 15px 0 0;
+    
+}
+.preview div
+{
+    position: relative;
+    width: 100px;
+    bottom: 3px;
+    left: 2px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    opacity: 0;
+
+}
+.preview div p{
+    background-color: rgba(62, 62, 62, 0.5);
+    width: 101px;
+    border-radius: 10%;
+    position: absolute;
+    top:-35px;
+    left: -1px;
+}
+.preview:hover div {
+    opacity: 1;
+    transition-duration: 1s;
+}
+   
+        
+       
+   
+
+
+    
+ 
+ 
