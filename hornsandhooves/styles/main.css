@@ -1,4 +1,7 @@
-nav a, footer a, span {
+nav a,
+footer a,
+span {
+
     font-size: 20px;
     color: rgb(7, 11, 1);
     text-decoration: none;
@@ -21,7 +24,7 @@ footer a {
 }
 
 body {
-    background-color: rgb(110, 109, 109);
+    background: url(../photo/olen.png);
 
 }
 
@@ -60,7 +63,7 @@ h2 {
 }
 
 .rog {
-    color: rgb(3, 8, 8);
+    color: rgba(252, 255, 255, 0.988);
 }
 
 a:hover {
@@ -74,8 +77,8 @@ a:hover {
     border: 2px, white, solid;
     background-color: cadetblue;
     display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 table img {
@@ -84,7 +87,7 @@ table img {
 
 #leftnav {
     border: 3px rgb(247, 249, 247) solid;
-    background-color: rgb(246, 244, 246);
+    background: linear-gradient(45deg, #031ff288, #09db4cf7);
     padding: 10px;
 }
 
@@ -92,18 +95,20 @@ table img {
 a[href^="https://"] {
     color: darkblue;
 }
-a[href^="#top"]
-{
+
+a[href^="#top"] {
+    opacity: 0.5;
     position: fixed;
     bottom: 10px;
     right: 10px;
 }
+
 #container {
     width: 1000px;
     margin: 0 auto;
 
     /* Цвет фона левой колонки */
-    background: #627771;
+    background: rgba(255, 255, 255, 0.5);
 
 }
 
@@ -114,7 +119,7 @@ header {
     /* Выравнивание по центру */
     padding: 5px;
     /* Отступы вокруг текста */
-    background: #8fa09b;
+    background: linear-gradient(45deg, #ae0606, #2805ec);
     /* Цвет фона шапки */
     color: #ffe;
     /* Цвет текста */
@@ -130,13 +135,13 @@ header {
     /* Отступы вокруг текста */
     float: left;
     /* Обтекание по правому краю */
-    background-color: #f4f9f8;
+    background: rgba(255, 255, 255, 0.5);
 
 }
 
 main {
     width: 700px;
-    background: #555c5a;
+    background: rgba(29, 28, 28, 0.5);
     /* Отступ слева */
     padding: 10px;
     /* Поля вокруг текста */
@@ -189,8 +194,8 @@ nav ul li:hover {
 .t tr td:hover,
 .t tr th:hover {
     visibility: hidden;
-   
-    
+
+
 }
 
 #flexnav {
@@ -211,41 +216,50 @@ nav ul li:hover {
 
 
 }
+
 /*Флекс с таблицей*/
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     border: 2px white solid;
-  }
- .block1, .block2, .block3, .block4{
+}
+
+.block1,
+.block2,
+.block3,
+.block4 {
     align-items: center;
     display: flex;
     border: 2px white solid;
     width: 170px;
- }
- .imgs{
+}
+
+.imgs {
     border-radius: 15%;
     box-shadow: 5px 3px 4px 2px black;
     width: 100px;
-   
- }
- .photo{
+
+}
+
+.photo {
     box-shadow: 5px 3px 4px 2px gray;
     border-radius: 10%;
     border: 2px orange solid;
- }
- #previewFrame{
+}
+
+#previewFrame {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-        
- }
- .preview{
-   margin: 0 15px 0 0;
-    
+
 }
-.preview div
-{
+
+.preview {
+    margin: 0 15px 0 0;
+
+}
+
+.preview div {
     position: relative;
     width: 100px;
     bottom: 3px;
@@ -256,24 +270,42 @@ nav ul li:hover {
     opacity: 0;
 
 }
-.preview div p{
+
+.preview div p {
     background-color: rgba(62, 62, 62, 0.5);
     width: 101px;
     border-radius: 10%;
     position: absolute;
-    top:-35px;
+    top: -35px;
     left: -1px;
 }
+
 .preview:hover div {
     opacity: 1;
     transition-duration: 1s;
 }
-   
-        
-       
-   
 
+.navVap ul {
+    list-style: none;
 
-    
- 
- 
+}
+
+.navmedia ul {
+    border: 1px rgb(2, 2, 2) dashed;
+    background-color: rgb(252, 252, 252);
+    position: absolute;
+    width: 140px;
+    display: none;
+}
+
+.navmedia ul li {
+    position: relative;
+    right: 10px;
+
+}
+
+.navmedia:hover ul {
+    display: block;
+    transition-duration: 1s;
+
+}
